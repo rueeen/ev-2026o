@@ -6,7 +6,7 @@
 /* Reset base */
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem -> 10px */
 }
 
 *,
@@ -20,3 +20,139 @@ img {
 }
 
 /* Tu código va aquí */
+body{
+  font-size: 1.6rem;
+  background-image: url("../img/background.jpg");
+  position: center;
+  background-attachment: fixed;
+}
+
+.navbar{
+  background-color: black;
+  display: flex;  
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+.contenedor{
+  margin: 0 auto;
+  width: 140rem;
+}
+
+.texto-principal{
+  color: white; /* da color blanco a texto */
+  text-decoration: none; /* Quita el guion bajo*/
+  font-size: 4.5rem;
+  font-weight: bold; /* texto grueso */
+}
+
+.navbar-items{
+  display: flex;
+}
+
+.navbar-items li {
+  list-style: none;
+}
+
+.navbar-items li a{
+  color: white;
+  text-decoration: none;
+  margin-left: 5rem;
+  font-size: 2rem;
+}
+
+.productos{
+  display: flex;
+  background-color: white;
+  padding: 2rem 4rem;
+}
+
+.titulo-nuestros-productos{
+  text-align: center;
+}
+
+.cards-productos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img{
+  height: 35rem;
+}
+
+.card p{
+  padding: 2rem;
+}
+
+.listado-vendidos li{
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem;
+  border-bottom: solid #ccc .1rem;
+}
+
+.listado-vendidos li img{
+  width: 5rem;
+  height: 7rem;
+  margin-right: 2rem;
+}
+
+.mis-productos{
+  flex-basis: 70%;
+}
+
+.mas-vendidos{
+  flex-basis: 30%;
+}
+
+.footer-sitio{
+  background-color: black;
+  color: white;
+}
+
+.informacion{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+.columna{
+  flex-basis: 25%;
+}
+
+.columna ul li{
+  list-style: none;
+}
+
+.columna ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.linea-inferior{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  border-top: solid #ccc .1rem;
+}
+
+.linea-inferior ul {
+  display: flex;
+}
+
+.linea-inferior ul li{
+  list-style: none;
+}
+
+.linea-inferior ul li a{
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+}
